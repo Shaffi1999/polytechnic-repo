@@ -1,0 +1,129 @@
+.band {
+    width: 100%;
+    height: 45px;
+    background-color: #f97316;
+    display: flex;
+    align-items: center;
+}
+
+.inner-content {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* Left items inline on desktop */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.left-section p {
+    margin: 0;
+}
+
+.left-section span {
+    font-size: 18px;
+}
+
+/* Login button */
+.login-btn {
+    background-color: #05375a;
+    color: white;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.login-btn i {
+    margin-right: 5px;
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE DESIGN (Mobile screens below 768px)
+-----------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    .band {
+        height: auto; /* allow height to adjust automatically */
+        padding: 8px 0;
+    }
+
+    .inner-content {
+        flex-direction: column; /* stack items vertically */
+        gap: 8px;
+        text-align: center;
+    }
+
+    .left-section {
+        flex-direction: column; /* phone and email go one below another */
+        gap: 5px;
+    }
+
+    .left-section span {
+        display: none; /* hide | separator on mobile */
+    }
+
+    .login-btn {
+        width: 100%;  /* full-width button */
+        padding: 8px;
+    }
+}
+
+
+/* ---------------------------------------------------
+   EVEN SMALLER MOBILE SCREEN (below 480px)
+-----------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+    .left-section p {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+
+/* Wrapper for login dropdown */
+.login-dropdown {
+    position: relative;
+}
+
+/* Dropdown menu */
+.login-menu {
+    display: none; /* hidden initially */
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: white;
+    border-radius: 5px;
+    min-width: 180px;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+.login-menu a {
+    display: block;
+    padding: 8px 18px;
+    color: #222;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.login-menu a:hover {
+    background: #f2f2f2;
+}
