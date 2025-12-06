@@ -54,27 +54,32 @@
 @media (max-width: 768px) {
 
     .band {
-        height: auto; /* allow height to adjust automatically */
+        height: auto;
+        /* allow height to adjust automatically */
         padding: 8px 0;
     }
 
     .inner-content {
-        flex-direction: column; /* stack items vertically */
+        flex-direction: column;
+        /* stack items vertically */
         gap: 8px;
         text-align: center;
     }
 
     .left-section {
-        flex-direction: column; /* phone and email go one below another */
+        flex-direction: column;
+        /* phone and email go one below another */
         gap: 5px;
     }
 
     .left-section span {
-        display: none; /* hide | separator on mobile */
+        display: none;
+        /* hide | separator on mobile */
     }
 
     .login-btn {
-        width: 100%;  /* full-width button */
+        width: 100%;
+        /* full-width button */
         padding: 8px;
     }
 }
@@ -104,7 +109,8 @@
 
 /* Dropdown menu */
 .login-menu {
-    display: none; /* hidden initially */
+    display: none;
+    /* hidden initially */
     position: absolute;
     right: 0;
     top: 45px;
@@ -112,7 +118,7 @@
     border-radius: 5px;
     min-width: 180px;
     padding: 10px 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 999;
 }
 
@@ -127,3 +133,94 @@
 .login-menu a:hover {
     background: #f2f2f2;
 }
+
+
+/* Header container */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+}
+
+/* Logo + text */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    height: 60px;
+}
+
+
+/* Navigation menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #083d6b;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav-menu li a:hover {
+    color: #f57c00;
+    transition: 0.3s;
+}
+
+
+
+
+.flash-container {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            width: 100%;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .flash-left {
+            background-color: #e60050;
+            padding: 10px 18px;
+            font-weight: bold;
+            position: relative;
+            font-size: 13px;
+        }
+
+        .flash-left::after {
+            content: "";
+            position: absolute;
+            right: -18px;
+            top: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 18px solid #e60050;
+        }
+
+        .flash-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 28px;
+            font-size: 13px;
+        }
+
+        .flash-wrapper {
+            height: 18px;
+            overflow: hidden;
+        }
+
+
+        
