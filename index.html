@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Polytechnic College</title>
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+
 </head>
+
 <body>
 
     <!-- Orange Band -->
     <div class="band">
-        <div class="inner-content"> 
-            
+        <div class="inner-content">
+
             <!-- LEFT SECTION -->
             <div class="left-section">
                 <p><i class="bi bi-telephone"></i> +91 9502176667</p>
@@ -23,41 +28,245 @@
 
             <!-- RIGHT SECTION (LOGIN BUTTON) -->
             <!-- RIGHT SECTION (LOGIN BUTTON + DROPDOWN) -->
-<div class="login-dropdown">
-    <button class="login-btn" id="loginBtn">
-        <i class="bi bi-person"></i> Login <i class="bi bi-caret-down-fill"></i>
-    </button>
+            <div class="login-dropdown">
+                <button class="login-btn" id="loginBtn">
+                    <i class="bi bi-person"></i> Login <i class="bi bi-caret-down-fill"></i>
+                </button>
 
-    <div class="login-menu" id="loginMenu">
-        <a href="#">C23 Results</a>
-        <a href="#">Student/Parent login</a>
-        <a href="#">Aditya Mail</a>
-    </div>
-</div>
-
-
-
-
+                <div class="login-menu" id="loginMenu">
+                    <a href="#">C23 Results</a>
+                    <a href="#">Student/Parent login</a>
+                    <a href="#">Aditya Mail</a>
+                </div>
+            </div>
 
 
         </div>
     </div>
-<script>
-    const loginBtn = document.getElementById("loginBtn");
-    const loginMenu = document.getElementById("loginMenu");
+    <div class="header">
+    <div class="logo-area">
+        <img src="Images/logo.png" alt="Aditya Logo">
+    </div>
 
-    loginBtn.addEventListener("click", function () {
-        loginMenu.style.display = 
-            loginMenu.style.display === "block" ? "none" : "block";
-    });
+    <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Infrastructure</a></li>
+        <li><a href="#">Activities</a></li>
+        <li><a href="#">Placements</a></li>
+        <li><a href="#">Fee-Online Payments</a></li>
+        <li><a href="#">RecruitmentPrep</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+</div>
 
-    // Close dropdown if clicked outside
-    document.addEventListener("click", function(e) {
-        if (!loginBtn.contains(e.target) && !loginMenu.contains(e.target)) {
-            loginMenu.style.display = "none";
+<!-- =============== FLASH NEWS (TEXT FROM BOTTOM) =============== -->
+    <div class="flash-container">
+        <div class="flash-left">Flash News</div>
+
+        <div class="flash-right">
+            <div class="flash-wrapper">
+                <div id="flashText" class="flash-text">CRT TESTS LINK</div>
+            </div>
+            <a href="#" class="click-here">Click Here</a>
+        </div>
+    </div>
+
+<!-- Carousel -->
+<div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <img src="Images/ALL TOPPERS.jpeg" class="d-block w-100" alt="First slide">
+    </div>
+
+    <div class="carousel-item">
+      <img src="Images/placement poster-1.jpeg" class="d-block w-100" alt="Second slide">
+    </div>
+
+    <div class="carousel-item">
+      <img src="Images/thought works.jpeg" class="d-block w-100" alt="Third slide">
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<section class="events-section py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- ===================== 1) EVENTS | CIRCULARS ===================== -->
+            <div class="col-lg-3">
+                <h5 class="section-heading">EVENTS | CIRCULARS</h5>
+
+                <div class="event-box">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="month">SEP</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="event-info">
+                            <p class="title">Poly Veda Tech Fest 2K23</p>
+                            <a href="#" class="more">More ></a>
+                        </div>
+                    </div>
+
+                    <button class="btn-more">More Events »</button>
+                </div>
+            </div>
+
+
+            <!-- ===================== 2) LATEST UPDATES ===================== -->
+            <div class="col-lg-3">
+                <h5 class="section-heading">LATEST UPDATES</h5>
+
+                <div class="update-card">
+                    <p>YOUTH FOR SOCIAL IMPACT</p>
+                    <a href="#" class="read">Read</a>
+                </div>
+
+                <div class="update-card">
+                    <p>AP POLYCET web options entry has been postponed to 30th June</p>
+                    <a href="#" class="read">Read</a>
+                </div>
+
+                <div class="update-card">
+                    <p>AP POLYCET WEB COUNSELLING STARTED ON 20-06-2025</p>
+                    <a href="#" class="read">Read</a>
+                </div>
+
+                <div class="update-card">
+                    <p>AP POLYCET ONLINE COACHING STARTED ON APRIL 3rd-2025</p>
+                    <a href="#" class="read">Read</a>
+                </div>
+
+                <div class="update-card">
+                    <p>AP ECET NOTIFICATION-2025</p>
+                    <a href="#" class="read">Read</a>
+                </div>
+
+                <button class="btn-more">More Updates »</button>
+            </div>
+
+
+            <!-- ===================== 3) RANKINGS ===================== -->
+            <div class="col-lg-3 text-center">
+                <h5 class="section-heading">RANKINGS</h5>
+
+                <div class="rank-card">
+                    <img src="Images/rank1.png" class="rank-img" alt="NAAC Rank">
+                    <p class="rank-text">NAAC "A" GRADE</p>
+                </div>
+
+                <!-- Slider dots -->
+                <div class="rank-dots">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+
+            <!-- ===================== 4) TECHNICAL HUB ===================== -->
+            <div class="col-lg-3 text-center">
+                <h5 class="section-heading">TECHNICAL HUB</h5>
+
+                <div id="techHubCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="Images/tech_logo1.png" class="d-block w-100" alt="Tech Hub 1">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="Images/tech_logo2.png" class="d-block w-100" alt="Tech Hub 2">
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#techHubCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#techHubCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- JS -->
+    <script>
+        const loginBtn = document.getElementById("loginBtn");
+        const loginMenu = document.getElementById("loginMenu");
+
+        loginBtn.addEventListener("click", function () {
+            loginMenu.style.display =
+                loginMenu.style.display === "block" ? "none" : "block";
+        });
+
+        // Close dropdown if clicked outside
+        document.addEventListener("click", function (e) {
+            if (!loginBtn.contains(e.target) && !loginMenu.contains(e.target)) {
+                loginMenu.style.display = "none";
+            }
+        });
+    </script>
+
+    <!-- Flash text from bottom JS -->
+    <script>
+        const messages = [
+            "CRT TESTS LINK",
+            "ADMISSIONS OPEN 2025",
+            "PLACEMENT DRIVE SCHEDULED",
+            "EXAM TIME TABLE RELEASED",
+            "HOSTEL VACANCIES AVAILABLE"
+        ];
+
+        let index = 0;
+        const flashText = document.getElementById("flashText");
+
+        function showNextMessage() {
+            flashText.classList.remove("show");
+
+            setTimeout(() => {
+                flashText.textContent = messages[index];
+                flashText.classList.add("show");
+            }, 200);
+
+            index = (index + 1) % messages.length;
         }
-    });
-</script>
+
+        flashText.classList.add("show"); // first one
+        setInterval(showNextMessage, 3000);
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
+
 </html>
